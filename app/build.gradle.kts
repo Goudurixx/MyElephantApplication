@@ -4,7 +4,9 @@ plugins {
 }
 
 tasks.register("hello") {
-    println("hello from " + project.parent?.name)
+    doLast {
+        println("hello from " + project.parent?.name)
+    }
 }
 
 android {
