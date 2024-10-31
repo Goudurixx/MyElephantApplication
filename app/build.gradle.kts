@@ -3,6 +3,10 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
 }
 
+tasks.register("hello") {
+    println("hello from " + project.parent?.name)
+}
+
 android {
     namespace = "com.goudurixx.myelephantapplication"
     compileSdk = 34
